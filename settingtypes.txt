@@ -1,10 +1,16 @@
 #naturalbiomes settings
 
+# By default this mod ADDS its biomes on top of the ones Minetest Game provides,
+# so the default biomes are kept and the world becomes more varied.
+# Only enable the options below if you want to completely replace the defaults.
+
 #If enabled, will clear all registered biomes.
-naturalbiomes.clear_biomes (Enable to clear registered biomes.  true / false) bool true
+# Leave disabled (default) to keep Minetest Game's biomes and add the mod's biomes on top.
+naturalbiomes.clear_biomes (Clear registered biomes (removes Minetest Game's biomes).  true / false) bool false
 
 #If enabled, will clear all registered decorations.
-naturalbiomes.clear_decos (Enable to clear registered decorations.  true / false) bool true
+# Leave disabled (default) to keep Minetest Game's decorations and add the mod's decorations on top.
+naturalbiomes.clear_decos (Clear registered decorations (removes Minetest Game's decorations).  true / false) bool false
 
 #If enabled, will clear all registered ores.
-naturalbiomes.clear_ores (Enable to clear registered ores.  true / false) bool false
+naturalbiomes.clear_ores (Clear registered ores (removes Minetest Game's ores).  true / false) bool false

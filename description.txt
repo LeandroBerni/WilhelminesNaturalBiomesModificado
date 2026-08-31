@@ -1,1 +1,1 @@
-Adds 7 new biomes to your Minetest Game world.
+Adds 9 new biomes to your Minetest Game world, in addition to the default biomes (they no longer replace them).

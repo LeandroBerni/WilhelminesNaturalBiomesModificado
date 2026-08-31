@@ -1,7 +1,10 @@
 --This creates the naturalbiomes object.
 naturalbiomes = {}
 
---This creates the naturalbiomes.settings object, and fills it with either the menu selected choices as defined in settingtypes.txt, or default values, (In this case, false).
+--This creates the naturalbiomes.settings object, and fills it with either the menu selected choices as defined in settingtypes.txt, or default values.
+--By default nothing is cleared: the mod's biomes are ADDED on top of Minetest Game's
+--default biomes, so the world becomes more varied. Clearing (and thereby fully replacing
+--the default biomes) only happens when the matching option is explicitly set to true.
 naturalbiomes.settings = {
 	clear_biomes			= minetest.settings:get_bool("naturalbiomes.clear_biomes") or false,
 	clear_decos			= minetest.settings:get_bool("naturalbiomes.clear_decos") or false,
@@ -44,6 +47,3 @@ dofile(path .. "dye.lua") --
 dofile(path .. "bushland.lua") --
 dofile(path .. "leafdecay.lua") --
 dofile(path .. "hunger.lua") --
-
-
-
